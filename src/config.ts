@@ -21,8 +21,8 @@ import { getTranslateLanguageFromConfig } from "./utils/language-utils";
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN' 等。
 
 export const siteConfig: SiteConfig = {
-	title: "Blog",
-	subtitle: "Mizuki",
+	title: "方糖",
+	subtitle: " ",
 
 	lang: SITE_LANG,
 
@@ -40,7 +40,7 @@ export const siteConfig: SiteConfig = {
 		ignoreTags: ["script", "style", "code", "pre"], // 翻译时忽略的 HTML 标签
 	},
 	banner: {
-		enable: true, // 是否启动Banner壁纸模式
+		enable: false, // 是否启动Banner壁纸模式
 
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
@@ -103,7 +103,7 @@ export const siteConfig: SiteConfig = {
 	],
 };
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
-	enable: true, // 启用全屏壁纸功能,非Banner模式下生效
+	enable: false, // 启用全屏壁纸功能,非Banner模式下生效
 	src: {
 		desktop: [
 			"/images/desktop-banner/1.webp",
@@ -129,25 +129,7 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,		
-		{
-			name: "我的",
-			url: "/content/",
-			icon: "material-symbols:person",
-			children: [				
-				LinkPreset.Games,
-				LinkPreset.Anime,
-			],
-		},
-		{
-			name: "项目展示",
-			url: "/projects/",
-			icon: "material-symbols:work",
-		},
-		{
-			name: "时间线",
-			url: "/timeline/",
-			icon: "material-symbols:timeline",
-		},
+
 		{
 			name: "友链",
 			url: "/links/",
@@ -181,23 +163,23 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "/avatar.png",
-	name: "Jursin",
-	location: "湖北",
-	company: "长江大学",
+	name: "Feng",
+	location: "浙江",
+	company: " ",
 	status: {
-	emoji: "🏫",
-	text: "上学中",
+	emoji: "🧧",
+	text: "工作中",
 	},
 	links: [
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/Jursin",
+			url: "https://github.com/sxgxhk",
 		},
 		{
 			name: "GitLab",
 			icon: "fa6-brands:gitlab",
-			url: "https://gitlab.com/Jursin",
+			url: "https://gitlab.com/sxgxhk",
 		},
 		{
 			name: "QQ",
@@ -207,38 +189,14 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Telegram",
 			icon: "fa6-brands:telegram",
-			url: "https://t.me/Hello_Jurisn",
-		},
-		{
-			name: "Discord",
-			icon: "fa6-brands:discord",
-			url: "https://discord.gg/4rr8EkAZ",
+			url: "https://t.me/Hello_Feng",
 		},
 		{
 			name: "Mail",
 			icon: "fa6-solid:envelope",
-			url: "mailto:jursin@126.com",
-		},
-		{
-			name: "Douyin",
-			icon: "fa6-brands:tiktok",
-			url: "https://www.douyin.com/user/MS4wLjABAAAAQGQcpmhfTWT-dnMkBX1Dtdw4mqk-WUPiz1Stbb5nn7Q",
-		},
-		{
-			name: "Bilibili",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/1575907920",
-		},
-		{
-			name: "YouTube",
-			icon: "fa6-brands:youtube",
-			url: "https://www.youtube.com/@Hello_Jursin",
-		},
-		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://steamcommunity.com/profiles/76561199700473272/",
+			url: "mailto:jslfp@foxmail.com",
 		}
+
 	],
 	// Umami统计部份，记得在layout插入Umami的head标签
 	umami: {
@@ -263,7 +221,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 export const commentConfig: CommentConfig = {
 	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
-		envId: "https://tanuki-jursin.netlify.app/.netlify/functions/twikoo",
+		envId: "https://twikoo.iblue.eu.org",
 	},
 };
 
@@ -278,12 +236,12 @@ export const announcementConfig: AnnouncementConfig = {
 };
 
 export const musicPlayerConfig: MusicPlayerConfig = {
-	enable: true, // 启用音乐播放器功能
+	enable: false, // 启用音乐播放器功能
 };
 
 export const footerConfig: FooterConfig = {
 	github: "https://github.com/Jursin/Blog", // GitHub 仓库链接
-	enable: true, // 是否启用Footer HTML注入功能
+	enable: false, // 是否启用Footer HTML注入功能
 };
 
 // 直接编辑 FooterConfig.html 文件来添加备案号等自定义内容
